@@ -1,7 +1,12 @@
+"use client";
+
+import { useSearchParams } from "next/navigation";
 import React from "react";
 
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  const searchParam = useSearchParams();
+  const name = searchParam.get("name");
+  return <div>name: {name}</div>;
 };
 
 export default Dashboard;

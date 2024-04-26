@@ -8,7 +8,7 @@ export default function Home() {
       <button
         className="float-right px-4 py-2 m-4 rounded bg-amber-300 "
         type="button"
-        onClick={() => router.push("/dashboard")}
+        onClick={() => router.push("/dashboard?name=username")}
       >
         Dashboard
       </button>
