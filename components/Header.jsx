@@ -11,19 +11,22 @@ const Header = () => {
       <ul className="flex gap-8 text-lg">
         <li>
           {/* <a href="/">home</a> */}
-          <Link href="/" className={PathName == "/" ? "active" : ""}>
+          <Link href="/" className={PathName == "/" ? "text-red-500" : ""}>
             home
           </Link>
         </li>
         <li>
-          <Link href="/blog" className={PathName == "/blog" ? "active" : ""}>
+          <Link
+            href="/blog"
+            className={PathName == "/blog" ? "text-red-500" : ""}
+          >
             blog
           </Link>
         </li>
         <li>
           <Link
             href="/dashboard"
-            className={PathName == "/dashboard" ? "active" : ""}
+            className={PathName == "/dashboard" ? "text-red-500" : ""}
           >
             dashboard
           </Link>
@@ -31,7 +34,7 @@ const Header = () => {
         <li>
           <Link
             href="/dashboard/settings"
-            className={PathName == "/dashboard/settings" ? "active" : ""}
+            className={PathName == "/dashboard/settings" ? "text-red-500" : ""}
           >
             settings
           </Link>
