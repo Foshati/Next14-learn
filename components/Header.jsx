@@ -25,7 +25,7 @@ const Header = () => {
         </li>
         <li>
           <Link
-            href="/dashboard"
+            href="/dashboard?name=fa"
             className={PathName == "/dashboard" ? "text-red-500" : ""}
           >
             dashboard
@@ -37,6 +37,22 @@ const Header = () => {
             className={PathName == "/dashboard/settings" ? "text-red-500" : ""}
           >
             settings
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/products"
+            className={PathName == "/products" ? "text-red-500" : ""}
+          >
+            products
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/users"
+            className={PathName == "/users" ? "text-red-500" : ""}
+          >
+            users
           </Link>
         </li>
       </ul>
