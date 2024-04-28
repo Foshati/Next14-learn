@@ -1,3 +1,13 @@
+import React from "react";
+import { Suspense } from "react";
+import UserTable from "@/components/UserTable";
+
 export default function Users() {
-  return <div>Users</div>;
+  return (
+    <main className="m-4">
+      <Suspense fallback={<div>Loading...</div>}>
+        <UserTable />
+      </Suspense>
+    </main>
+  );
 }

@@ -63,6 +63,14 @@ const Header = () => {
             productsDate
           </Link>
         </li>
+        <li>
+          <Link
+            href="/posts"
+            className={PathName == "/posts" ? "text-red-500" : ""}
+          >
+            posts
+          </Link>
+        </li>
       </ul>
       {/* <p>{PathName}</p> */}
     </div>
