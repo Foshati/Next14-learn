@@ -6,8 +6,13 @@ const getPost = async () => {
 };
 
 export default async function Posts() {
+  if (parseInt(params.id) == 2) {
+    notFound();
+  }
   const Posts = await getPost();
   //   console.log(Posts);
+
+  
 
   return (
     <div>
