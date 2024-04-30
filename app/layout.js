@@ -1,5 +1,12 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import { Roboto } from "next/font/google";
+
+const RobotoFont = Roboto({
+  subsets: ["latin"],
+  style: ["italic"],
+  weight: ["400"],
+});
 
 export const metadata = {
   title: "next.js14-learn",
@@ -8,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={RobotoFont.className}>
       <body>
         <div>
           <Header />
