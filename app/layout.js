@@ -1,11 +1,9 @@
 import Header from "@/components/Header";
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import localFont from "next/font/local";
 
-const RobotoFont = Roboto({
-  subsets: ["latin"],
-  style: ["italic"],
-  weight: ["400"],
+const myFont = localFont({
+  src: "../public/fonts/OpenSans-VariableFont_wdth,wght.ttf",
 });
 
 export const metadata = {
@@ -15,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={RobotoFont.className}>
+    <html lang="en" className={myFont.className}>
       <body>
         <div>
           <Header />
