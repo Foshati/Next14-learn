@@ -22,6 +22,8 @@ export default async function Posts() {
           <li className={styles.bgColor}>{post.title}</li>
         </ul>
       ))}
+
+      
     </div>
   );
 }

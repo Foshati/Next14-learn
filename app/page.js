@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Script from "next/script";
 
 export default function Home() {
   const router = useRouter();
@@ -12,6 +13,8 @@ export default function Home() {
       >
         Dashboard
       </button>
+
+
     </main>
   );
 }
