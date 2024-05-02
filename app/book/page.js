@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const getBook = async () => {
   const data = await fetch("http://localhost:3001/posts");
   const res = await data.json();
@@ -11,8 +13,10 @@ export default async function book() {
       {books.map((book) => {
         return (
           <ul className="p-4 m-4 " key={book.id}>
-            <li className="text-slate-400">{book.title}</li>
-            <li>{book.body}</li>
+            <li className="text-slate-400">
+              <Link href={`/book/${book.id}`}>{book.title}</Link>
+              {book.title}
+            </li>
           </ul>
         );
       })}
