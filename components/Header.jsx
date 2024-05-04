@@ -77,7 +77,15 @@ const Header = () => {
             href="/book"
             className={PathName == "/book" ? "text-red-500" : ""}
           >
-            books
+            books-ssr
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/book-csr"
+            className={PathName == "/book-csr" ? "text-red-500" : ""}
+          >
+            books-csr
           </Link>
         </li>
       </ul>

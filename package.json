@@ -7,13 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "jason-server":"json-server --watch db.json --port 3001"
+    "jason-server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.23",
     "next": "14.2.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sleep-promise": "^9.1.0"
   },
   "devDependencies": {
     "postcss": "^8",
