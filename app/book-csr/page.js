@@ -4,20 +4,26 @@ import { useState } from "react";
 import { useEffect } from "react";
 import sleep from "sleep-promise";
 
-export default function book() {
+export default function Book() {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getBookCsr = async () => {
-      const data = await fetch("http://localhost:3001/posts");
+      const data = await fetch("http://localhost:3001/posts", {
+        // cache: "force-cache",
+        // cache: "no-store",
+        // cache: "revalidate:5",
+      });
       await sleep(2000);
       const res = await data.json();
+
       setBooks(res);
       setLoading(false);
     };
     getBookCsr();
   }, []);
+
   if (loading) {
     return <p>loading.. getBookCsr</p>;
   }

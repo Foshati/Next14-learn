@@ -25,7 +25,7 @@ const Header = () => {
         </li>
         <li>
           <Link
-            href="/dashboard?name=fa"
+            href="/dashboard" /* ?name=fa */
             className={PathName == "/dashboard" ? "text-red-500" : ""}
           >
             dashboard
