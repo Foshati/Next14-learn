@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const getBook = async () => {
-  const data = await fetch("http://localhost:3001/posts", {
+  const data = await fetch("http://localhost:3001/posts"/* , {
     // cache: "force-cache",
     // cache: "no-store",
     // cache: "revalidate:5",
-  });
+  } */);
   const res = await data.json();
   return res;
 };

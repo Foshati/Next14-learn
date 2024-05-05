@@ -4,6 +4,17 @@ const getBookId = async (id) => {
   return res;
 };
 
+// SSG
+export async function generateStaticParams() {
+  const data = await fetch("http://localhost:3001/posts");
+  const posts = await data.json();
+  return posts.map((post) => {
+    return {
+      id: post.id.toString(),
+    };
+  });
+}
+
 export default async function bookId({ params }) {
   const bookId = await getBookId(params.id);
   return (
