@@ -2,11 +2,22 @@
 import { revalidatePath } from "next/cache";
 
 // server action function
-const addBook = async (formData) => {
+const addBook = async (state, formData) => {
   "use server";
 
   const title = formData.get("title");
   const body = formData.get("body");
+
+  if (title === "") {
+    return {
+      errTitle: "title id required",
+    };
+  }
+  if (body === "") {
+    return {
+      errBody: "body id required",
+    };
+  }
 
   const res = await fetch("http://localhost:3001/posts", {
     method: "post",
