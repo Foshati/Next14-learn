@@ -71,7 +71,6 @@ const Header = () => {
             posts
           </Link>
         </li>
-
         <li>
           <Link
             href="/book"
@@ -86,6 +85,11 @@ const Header = () => {
             className={PathName == "/book-csr" ? "text-red-500" : ""}
           >
             books-csr
+          </Link>
+        </li>
+        <li>
+          <Link href="/f1" className={PathName == "/f1" ? "text-red-500" : ""}>
+            f1-intercepting-route
           </Link>
         </li>
       </ul>
