@@ -9,6 +9,7 @@ const getPhotos = async () => {
 
 export default async function Photos() {
   const photos = await getPhotos();
+
   return (
     <main>
       <div>

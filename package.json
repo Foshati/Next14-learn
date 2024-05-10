@@ -14,6 +14,7 @@
     "next": "^14.3.0-canary.46",
     "react": "^18",
     "react-dom": "^18",
+    "react-modal": "^3.16.1",
     "sleep-promise": "^9.1.0"
   },
   "devDependencies": {
