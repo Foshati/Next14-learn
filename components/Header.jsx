@@ -92,6 +92,14 @@ const Header = () => {
             f1-intercepting-route
           </Link>
         </li>
+        <li>
+          <Link
+            href="/photos"
+            className={PathName == "/photos" ? "text-red-500" : ""}
+          >
+            Photos
+          </Link>
+        </li>
       </ul>
       {/* <p>{PathName}</p> */}
     </div>
