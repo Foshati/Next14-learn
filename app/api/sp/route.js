@@ -9,3 +9,4 @@ export function GET(request) {
 
   return NextResponse.json({ message: `color: ${color} - size:${size}` });
 }
+ 
