@@ -100,6 +100,15 @@ const Header = () => {
             Photos
           </Link>
         </li>
+
+        <li>
+          <Link
+            href="/about"
+            className={PathName == "/about" ? "text-red-500" : ""}
+          >
+            about-middleware
+          </Link>
+        </li>
       </ul>
       {/* <p>{PathName}</p> */}
     </div>
